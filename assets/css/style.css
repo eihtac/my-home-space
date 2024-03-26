@@ -1,0 +1,158 @@
+html {
+    background-color: #6C655D;
+}
+
+body{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+nav a{
+    text-decoration: none;
+    padding: 30px 20px;
+    color: #6C655D;
+}
+
+nav a:first-child{
+    background-color: #662F32;
+    color: white;
+}
+
+h1{
+    margin:60px auto;
+    font-size: 400%;
+    letter-spacing: -5px;
+    font-weight: lighter;
+}
+
+span{
+    color: #662F32;
+    letter-spacing: 0px;
+    font-weight: bold;
+}
+
+main{
+    width: 100%;
+    display: grid;
+    align-content: space-evenly;
+}
+
+.slider-container{
+    overflow: hidden;
+    grid-area: 1/1/1/4;
+}
+
+.slider{
+    display: flex;
+    animation: slider 12s infinite;
+}
+
+.slider-container img{
+    width: 100%;
+}
+
+@keyframes slider{
+    0%,
+    30%{
+        transform: translateX(0);
+    }
+    34%,
+    64%{
+        transform: translateX(-100%);
+    }
+    68%,
+    98%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+h2{
+    padding: 10px;
+    margin: 0;
+    background-color: #662F32;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+
+section > img{
+    width: 100%;
+}
+
+.fond-gris{
+    background-color: #645955;
+}
+
+.fond-gris a{
+    align-self: end;
+    align-content: end;
+}
+
+.fond-gris p{
+    color: white;
+}
+
+h3{
+    font-weight: lighter;
+}
+
+li{
+    list-style-image: url(..//images/arrow.png);
+    margin-bottom: 8px;
+}
+
+section article{
+    color:#662F32;
+    font-weight: bold;
+}
+
+button{
+    background-color: #645955;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer article{
+    font-size: small;
+}
+
+footer article img{
+    width: 10%;
+}
+
+footer a{
+    display: inline;
+}
+
+footer section{
+    display: inline;
+    place-self: end;
+}
